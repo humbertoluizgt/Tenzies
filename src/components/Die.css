@@ -1,0 +1,75 @@
+.die {
+  position: relative;  
+  padding: 4px;  
+  background-color: white;  
+  width: 52px;  
+  height: 52px;  
+  border-radius: 10%;
+  cursor: pointer;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);  
+}
+
+.dot {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color:black;
+}
+
+.value-1 .dot,
+.value-3 .dot:nth-of-type(2),
+.value-5 .dot:nth-of-type(5) {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.value-2 .dot:nth-of-type(1),
+.value-3 .dot:nth-of-type(1),
+.value-4 .dot:nth-of-type(1),
+.value-5 .dot:nth-of-type(1),
+.value-6 .dot:nth-of-type(1) {  
+  left: 5px;
+  top: 5px; 
+}
+
+.value-2 .dot:nth-of-type(2),
+.value-3 .dot:nth-of-type(3),
+.value-4 .dot:nth-of-type(4),
+.value-5 .dot:nth-of-type(4),
+.value-6 .dot:nth-of-type(4) {  
+  right: 5px;
+  bottom: 5px;
+}
+
+.value-4 .dot:nth-of-type(2),
+.value-5 .dot:nth-of-type(2),
+.value-6 .dot:nth-of-type(2) {
+  right: 5px;
+  top: 5px; 
+}
+
+.value-4 .dot:nth-of-type(3),
+.value-5 .dot:nth-of-type(3),
+.value-6 .dot:nth-of-type(3) {
+  left: 5px;
+  bottom: 5px;
+}
+
+.value-6 .dot:nth-of-type(5) {
+  left: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.value-6 .dot:nth-of-type(6) {
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.clicked {
+  background-color: #59E391;
+}

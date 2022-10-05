@@ -1,0 +1,106 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(180, 179, 179);
+}
+
+.main--outer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 570px;
+  width: 540px;
+  background-color: #103750;
+  margin: 50px auto 20px;
+}
+
+.main--inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 480px;
+  width: 480px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.main--title {
+  font-family: Karla, sans-serif;
+  font-size: 3rem;
+  margin-top: 10px;  
+}
+
+.main--description {
+  width: 375px;
+  font-family: Inter, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: #4A4E74;
+}
+
+.main--dice-container {
+  width: 420px;
+  margin: 39px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 30px;
+  justify-content: center;
+}
+
+.main--stats h3 {
+  font-family: Karla, sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.main--roll-button {
+  height: 40px;
+  width: 104px;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #5035FF;
+  font-family: Karla, sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold; 
+  border: none; 
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.main--roll-button:active {   
+  color: #efefef;
+  text-shadow: -1px -1px 0px #777, -1px -1px 0px #777;
+  box-shadow: inset 5px 5px 4px #222;
+  transform: translateY(1px); /*  Add per Vince's helpful comment  */
+}
+
+.main--restart-button {  
+  align-self: flex-start;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;   
+  cursor: pointer;  
+  transition: color 0.15s;
+}
+
+.main--restart-button:hover {  
+  color: red; 
+}
+
+.main--restart-button:active {  
+  opacity: 0.5; 
+}
+
+
+
+
+
